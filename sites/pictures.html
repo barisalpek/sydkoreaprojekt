@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SK Pictures</title>
+	<meta charset="utf-8">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../index.css">
+</head>
+<body>
+	<div id="entirecontent">
+<div id="topside">
+<div class="col-md-12">
+<a href="../index.html"><img id="logo" src="..\img\skflag.png" height="125"></a>
+<h1>South Korea - BASIC FACTS</h1>
+<h2>대한민국</h2>
+</div>
+
+<div class="col-md-12">
+<ul id="navbar">
+<li><a href="entertainment.html">Entertainment</a></li>
+<li><a href="geography.html">Geography</a></li>
+<li><a href="culture.html">Culture</a></li>
+<li><a href="education.html">Education</a></li>	
+<li><a href="economy.html">Economy</a></li>
+<li><a href="pictures.html">Pictures</a></li>			
+</ul>
+</div>
+<hr>
+
+
+<div class="slideshow-container">
+
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_720,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/yo45rpe1b4rgrwu8jcuf/GyeongbokgungPalace,NSeoulTower,andBukchonHanokVillageDayTourinSeoul.jpg" style="width:100%">
+    <div class="text">Gyeongbogkung Palace</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="https://www.agoda.com/wp-content/uploads/2019/03/N-Seoul-Tower-Namsan-Cable-Car.jpg" style="width:100%">
+    <div class="text">Namsan Tower</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="https://cdn.getyourguide.com/img/location_img-90374-3815871011-148.jpg" style="width:100%">
+    <div class="text">Village</div>
+  </div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6a/de/24.jpg" style="width:100%">
+    <div class="text">Beautiful Scenary</div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<script type="text/javascript">var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}</script>
+
+</body>
+</html>
